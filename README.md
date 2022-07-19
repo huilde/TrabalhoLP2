@@ -11,7 +11,7 @@ e pessoa, responsável pela hierarquia de pessoas do sistema.
 ## Linguagem utilizada
 
 ```console
-java
+Java
 ```
 
 ## Como compilar
