@@ -5,16 +5,6 @@ public interface InterfaceUsuario {
     
     Scanner ler = new Scanner(System.in);
 
-     default int iniciar(){
-        System.out.println("Bem-vindo ao sistema, por favor digite qual tipo de usuário você é:");
-        System.out.println("1- Passageiro");
-        System.out.println("2- Cobrador");
-        System.out.println("3 - Motorista");
-        
-        return ler.nextInt();
-
-    }
-
     default String lerString(){
         String texto;
         texto = ler.nextLine();
