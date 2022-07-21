@@ -5,7 +5,7 @@ import br.com.caelum.stella.validation.CPFValidator;
 public class Pessoa {
 
     protected String nome;
-    private String sobrenome;
+    protected String sobrenome;
     public String cpf;
 
     /**

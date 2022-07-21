@@ -8,10 +8,9 @@ public class BlaApplication {
 	public static void main(String[] args) {
 		InterfacePassageiro sistema = new InterfacePassageiro();
 		sistema.login();
-		if(sistema.lerInt()==1 ){
+		if (sistema.lerInt() == 1) {
 			sistema.login();
-		}
-		else{
+		} else {
 			System.err.println("Funcionalidade ainda não implementada");
 		}
 	}

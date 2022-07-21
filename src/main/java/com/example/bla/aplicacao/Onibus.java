@@ -73,5 +73,4 @@ public class Onibus {
         this.linha = linha;
     }
 
-    
 }
