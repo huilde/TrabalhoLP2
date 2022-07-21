@@ -2,6 +2,12 @@ package com.example.bla.dados;
 
 import java.util.List;
 
+/**
+ * Interface do repositório
+ *
+ * O Repositório funciona como um CRUD
+*/
+
 public interface Repositorio {
 
     public void salvar(Entidade e);
