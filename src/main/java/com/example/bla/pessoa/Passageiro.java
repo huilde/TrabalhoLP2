@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 import com.example.bla.aplicacao.Passagem;
 
-// interface, pegarPassagem, pegarBagagem, entregarPassagem, escolherAssento(excecao, verificar passagem ja compra)
 public class Passageiro extends Pessoa {
 
     private double saldo;
@@ -12,7 +11,7 @@ public class Passageiro extends Pessoa {
     private ArrayList<Passagem> passagens = new ArrayList<>();
 
     Passageiro(String nome, String sobrenome, double saldo){
-        super(nome, sobrenome);
+        super(nome, sobrenome, "");
         this.saldo = saldo;
     }
 

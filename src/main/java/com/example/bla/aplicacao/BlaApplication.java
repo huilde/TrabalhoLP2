@@ -6,10 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class BlaApplication {
 
 	public static void main(String[] args) {
-		interfacePassageiro.login();
-		InterfacePassageiro sitema = new InterfacePassageiro();
-		if(sitema.lerInt()==1 ){
-			sitema.login();
+		InterfacePassageiro sistema = new InterfacePassageiro();
+		sistema.login();
+		if(sistema.lerInt()==1 ){
+			sistema.login();
 		}
 		else{
 			System.err.println("Funcionalidade ainda não implementada");

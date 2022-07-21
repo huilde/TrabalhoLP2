@@ -7,25 +7,25 @@ import java.time.LocalDate;
  *
  * Herda da classe Pessoa
  * Representa a pessoa do tipo pessoa física
-*/
+ */
 
 public class PessoaFisica extends Pessoa {
 
     public String cpf;
     public LocalDate dataNascimento;
-    
-/**
- * Construtor Pessoa Física
- *
- * @param nome      nome da pessoa física
- * @param sobrenome     sobrenome da pessoa física
- * @param cpf       cpf da pessoa física
-  * @param dataNascimento       data de nascimento da pessoa física
-*/
 
-    PessoaFisica(String nome , String sobrenome , String cpf, LocalDate dataNascimento){
-        this.nome = nome;
-        this.sobrenome = sobrenome;
+    /**
+     * Construtor Pessoa Física
+     *
+     * @param nome           nome da pessoa física
+     * @param sobrenome      sobrenome da pessoa física
+     * @param cpf            cpf da pessoa física
+     * @param dataNascimento data de nascimento da pessoa física
+     */
+
+    PessoaFisica(String nome, String sobrenome, String cpf, LocalDate dataNascimento) {
+        super.nome = nome;
+        super.sobrenome = sobrenome;
         this.cpf = cpf;
         this.dataNascimento = dataNascimento;
     }

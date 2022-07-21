@@ -8,9 +8,9 @@ import com.example.bla.pessoa.Passageiro;
 public class InterfacePassageiro implements Menu {
 
     private List<Passagem> passagens = new ArrayList<>();
-    private List<Passageiro> passageiros = new ArrayList<>(Passageiro("huilde", "viana ", 100));
+    private List<Passageiro> passageiros = new ArrayList<>();
 
-    static int iniciar(){
+    static int iniciar() {
         System.out.println("Bem-vindo ao sistema, por favor digite qual tipo de usuário você é:");
         System.out.println("1- Passageiro");
         System.out.println("2- Cobrador");
@@ -19,15 +19,15 @@ public class InterfacePassageiro implements Menu {
         return ler.nextInt();
     }
 
-    public void login(){
+    public void login() {
         System.out.println("Você já possui cadastro no sistema?");
         System.out.println("1- Sim");
         System.out.println("2- Não");
         int controle = lerInt();
         System.out.println("Digite seu CPF:");
         String cpfUsuário = lerString();
-        for( Passageiro passageiro : passageiros){
-            if( cpfUsuário == passageiro.getCpf()){
+        for (Passageiro passageiro : passageiros) {
+            if (cpfUsuário == passageiro.getCpf()) {
                 System.out.println("você está cadastrado no sistema");
                 System.out.println("Selecione uma opção:");
                 System.out.println("1- consultar saldo:");
@@ -35,13 +35,12 @@ public class InterfacePassageiro implements Menu {
                 // InterfacePassageiro.
                 // //(salario > 1000 ? 0.10 : 0.15)
 
-            }
-            else{
+            } else {
                 System.out.println("Você não está cadastrado, gostaria de se cadastrar?");
                 System.out.println("1 - sim");
                 System.out.println("2 - Não");
             }
         }
-        }
+    }
 
 }

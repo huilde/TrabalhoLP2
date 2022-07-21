@@ -2,14 +2,17 @@ package com.example.bla.pessoa;
 
 public abstract class Funcionario extends Pessoa {
     private double salario;
-    
-     /**
+
+    public Funcionario() {
+    }
+
+    /**
      * Construtor do Funcionario
      *
-     * @param nome  nome do funcionário
-     * @param sobrenome   sobrenome do funcionário
-     * @param cpf cpf do funcionário
-     *  @param salario salario do funcionário
+     * @param nome      nome do funcionário
+     * @param sobrenome sobrenome do funcionário
+     * @param cpf       cpf do funcionário
+     * @param salario   salario do funcionário
      */
     public Funcionario(String nome, String sobrenome, String cpf, double salario) {
         super(nome, sobrenome, cpf);
@@ -18,7 +21,8 @@ public abstract class Funcionario extends Pessoa {
 
     /**
      * getter de salario
-     *  @returns salario do funcionário
+     * 
+     * @returns salario do funcionário
      */
 
     public double getSalario() {
@@ -33,7 +37,7 @@ public abstract class Funcionario extends Pessoa {
         this.salario = salario;
     }
 
-/**
+    /**
      * função respomsável por fazer o funcionario tomar café
      */
     public void tomarCafe() {

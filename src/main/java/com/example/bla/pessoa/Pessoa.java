@@ -4,11 +4,11 @@ import br.com.caelum.stella.validation.CPFValidator;
 
 public class Pessoa {
 
-    private String nome;
+    protected String nome;
     private String sobrenome;
     public String cpf;
 
-        /**
+    /**
      * setter de nome
      * função responsável por modificar o nome da pessoa
      */
@@ -17,8 +17,7 @@ public class Pessoa {
         this.nome = nome;
     }
 
-
-     /**
+    /**
      * setter de sobrenome
      * função responsável por modificar o sobrenome da pessoa
      */
@@ -27,15 +26,16 @@ public class Pessoa {
         this.sobrenome = sobrenome;
     }
 
-        /**
+    /**
      * getter de CPF
+     * 
      * @return retorna o cpf da pessoa
      */
     public String getCpf() {
         return cpf;
     }
 
-        /**
+    /**
      * setter de CPF
      * responsável por modificar o atributo cpf
      */
@@ -47,20 +47,20 @@ public class Pessoa {
     public Pessoa() {
     }
 
-     /**
+    /**
      * Construtor de pessoa
      *
-     * @param nome nome da pessoa
+     * @param nome      nome da pessoa
      * @param sobrenome sobrenome da pessoa
-     * @param cpf cpf da pessoa
+     * @param cpf       cpf da pessoa
      */
 
-    public Pessoa(String nome, String sobrenome ,String cpf) {
+    public Pessoa(String nome, String sobrenome, String cpf) {
         this.nome = nome;
         this.sobrenome = sobrenome;
     };
 
-        /**
+    /**
      * método toString da classe pessoa
      */
     @Override
@@ -68,7 +68,7 @@ public class Pessoa {
         return nome + " " + sobrenome;
     }
 
-        /**
+    /**
      * Função para validar se o cpf é válido
      *
      * @param cpf recebe um cpf para validar
@@ -85,26 +85,29 @@ public class Pessoa {
             return false;
         }
     }
-/**
-    * getter de nome
+
+    /**
+     * getter de nome
+     * 
      * @retun nome
- */
+     */
     public String getNome() {
         return nome;
     }
 
     /**
-    * getter de sobrenome
+     * getter de sobrenome
+     * 
      * @retun sobrenome
- */
+     */
     public String getSobrenome() {
         return sobrenome;
     }
 
     /**
-    *
+     *
      * @retun nome + sobrenome
- */
+     */
     public String getNomeCompleto() {
         return nome + " " + sobrenome;
     }
