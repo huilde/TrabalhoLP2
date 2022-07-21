@@ -1,6 +1,6 @@
 package com.example.bla.pessoa;
 
-public abstract class Funcionario {
+public abstract class Funcionario extends Pessoa {
 
     public void darInformacao() {
         System.out.println("info");

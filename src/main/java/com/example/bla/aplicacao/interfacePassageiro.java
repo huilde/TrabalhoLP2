@@ -5,8 +5,9 @@ import java.util.List;
 
 import com.example.bla.pessoa.Passageiro;
 
-public class interfacePassageiro implements InterfaceUsuario {
+public class interfacePassageiro implements Menu {
 
+    private List<Passagem> passagens = new ArrayList<>();
     private List<Passageiro> passageiros = new ArrayList<>();
 
     static int iniciar(){
@@ -26,6 +27,7 @@ public class interfacePassageiro implements InterfaceUsuario {
         if(controle == 1){
             System.out.println("Digite seu CPF:");
             String cpfUsuário = lerString();
+
 
         }
 

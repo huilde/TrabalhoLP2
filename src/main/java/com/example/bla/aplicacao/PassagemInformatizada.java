@@ -6,4 +6,12 @@ public class PassagemInformatizada extends Passagem {
     public PassagemInformatizada(Linha linha, double valor) {
         super(linha, valor);
     }
+
+    public Object getIdentificadorDigital() {
+        return identificadorDigital;
+    }
+
+    public void setIdentificadorDigital(Object identificadorDigital) {
+        this.identificadorDigital = identificadorDigital;
+    }
 }
