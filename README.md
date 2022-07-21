@@ -13,22 +13,9 @@ e pessoa, responsável pela hierarquia de pessoas do sistema.
 ```console
 Java
 ```
-
-## Como compilar
-
-```console
-
-```
-
-## Para executar
-
-```console
-
-```
-
 ## Vídeo
 
 ```console
-
+https://www.youtube.com/watch?v=ClF_7tJt0gg
 ```
 
