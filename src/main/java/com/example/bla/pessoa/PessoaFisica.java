@@ -14,7 +14,7 @@ public class PessoaFisica extends Pessoa {
     public String cpf;
     public LocalDate dataNascimento;
 
-    PessoaFisica(String nome , String sobrenome , String cpf, LocalDate dataNascimetno){
+    PessoaFisica(String nome , String sobrenome , String cpf, LocalDate dataNascimento){
 
     
     }
