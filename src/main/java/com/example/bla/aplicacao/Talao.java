@@ -19,9 +19,10 @@ public class Talao {
  * @param id    identificador do talão
  * @param dataImpressao     data da impressão do talão
 */
-    Talao(String id, LocalDate dataImpressao) {
-        this.id = id;
-        this.dataImpressao = dataImpressao;
-    }
+
+Talao(String id, LocalDate dataImpressao) {
+    this.id = id;
+    this.dataImpressao = dataImpressao;
+}
 
 }
