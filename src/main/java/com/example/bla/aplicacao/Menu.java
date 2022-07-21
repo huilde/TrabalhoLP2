@@ -1,7 +1,7 @@
 package com.example.bla.aplicacao;
 import java.util.Scanner;
 
-public interface InterfaceUsuario {
+public interface Menu {
     
     Scanner ler = new Scanner(System.in);
 
