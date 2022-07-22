@@ -10,8 +10,8 @@ public class Passageiro extends Pessoa {
 
     private ArrayList<Passagem> passagens = new ArrayList<>();
 
-    Passageiro(String nome, String sobrenome, double saldo) {
-        super(nome, sobrenome, "");
+    Passageiro(String nome, String sobrenome,String cpf , double saldo) {
+        super(nome, sobrenome,cpf);
         this.saldo = saldo;
     }
 
