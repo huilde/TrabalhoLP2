@@ -18,11 +18,18 @@ public class PassagemManual extends Passagem {
     public PassagemManual(Linha linha, double valor) {
         super(linha, valor);
     }
-
+/**
+ * getter de numeração da passagem manual
+ * 
+ * @return numeração
+ */
     public Long getNumeracao() {
         return numeracao;
     }
-
+ /**
+ * setter de numeração da passagem manual
+ * modifica a numeração da passagem manual
+ */
     public void setNumeracao(Long numeracao) {
         this.numeracao = numeracao;
     }
