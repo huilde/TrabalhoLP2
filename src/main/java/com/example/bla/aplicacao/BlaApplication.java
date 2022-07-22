@@ -5,7 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * Classe da aplicação Bla
- * Representa a interface com o usuário onde ele primeiramente deve fazer o login
+ * Representa a interface com o usuário onde ele primeiramente deve fazer o
+ * login
  */
 
 public class BlaApplication {
@@ -17,4 +18,5 @@ public class BlaApplication {
 			sistema.login();
 		}
 
+	}
 }
