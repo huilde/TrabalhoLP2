@@ -17,6 +17,9 @@ import com.example.bla.pessoa.Motorista;
 
 public class Onibus {
 
+/**
+ *Enum com todas as situações possíveis de um ônibus
+*/
     private enum Situacao {
         FUNCIONANDO, EM_MANUTENCAO, QUEBRADO;
     }
