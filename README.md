@@ -19,3 +19,10 @@ Java
 https://www.youtube.com/watch?v=ClF_7tJt0gg
 ```
 
+## Execução
+
+Entrar na pasta raíz do projeto e executar:
+```
+mvn spring-boot:run
+```
+
