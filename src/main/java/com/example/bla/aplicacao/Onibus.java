@@ -5,6 +5,16 @@ import java.time.Period;
 
 import com.example.bla.pessoa.Motorista;
 
+/**
+ * Classe do ônibus
+ * @param motorista     motorista responsável pelo ônibus
+ * @param id     identificador do ônibus
+ * @param situacao      status do ônibus
+ * @param proximaManutencao     próxima manutenção do ônibus
+ * @param frequenciaManutencao     frequência da manutenção
+ * @param linha     linha a qual o ônibus pertence
+ */
+
 public class Onibus {
 
     private enum Situacao {
@@ -18,8 +28,9 @@ public class Onibus {
     private Period frequenciaManutencao;
     private Linha linha;
 
-    // funcao levar para manutencao, proximaManutencao++
-
+ /**
+ *Construtor do ônibus
+ */
     public Onibus(Linha linha, Motorista motorista) {
         this.linha = linha;
         this.motorista = motorista;
