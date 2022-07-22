@@ -29,8 +29,7 @@ public class Passageiro extends Pessoa {
  */
     public void fazerRecarga(double valor) {
         saldo = saldo + valor;
-    }
-    
+    }    
 /**
  * Compra passagem
  */
