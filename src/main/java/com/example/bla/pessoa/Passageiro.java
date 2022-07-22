@@ -30,6 +30,14 @@ Passageiro(String nome, String sobrenome,String cpf , double saldo) {
     public void fazerRecarga(double valor) {
         saldo = saldo + valor;
     }    
+
+    /**
+ * getter de saldo
+ * @return saldo
+ */
+    public double getSaldo() {
+        return saldo;
+    }
 /**
  * Compra passagem
  */

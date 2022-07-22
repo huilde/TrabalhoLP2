@@ -16,24 +16,26 @@ public class InterfacePassageiro implements Menu {
     private List<Passagem> passagens = new ArrayList<>();
     private List<Passageiro> passageiros = new ArrayList<>();
 
-<<<<<<< HEAD
-    private void interacaoPassageiro(){
+    private void interacaoPassageiro(int acaoUsuario, Passageiro passageiro){
+        if(acaoUsuario==1){
+
+            System.out.println(passageiro.getSaldo())
+        }
+        else{
+            System.out.println("digite um comando válido");
+        }
 
     }
 
-=======
 /**
  * Iniciar a aplicação com as seguintes opções de usuário:
  * 1 - passageiro
  * 2 - cobrador 
  * 3 - motorista
  */
->>>>>>> 21c9c2d97bdc0c1aceea2f16065f0f9dbbb92d15
     static int iniciar() {
         System.out.println("Bem-vindo ao sistema, por favor digite qual tipo de usuário você é:");
         System.out.println("1- Passageiro");
-        System.out.println("2- Cobrador");
-        System.out.println("3 - Motorista");
 
         return ler.nextInt();
     }
@@ -57,7 +59,8 @@ public class InterfacePassageiro implements Menu {
                 System.out.println("você está cadastrado no sistema");
                 System.out.println("Selecione uma opção:");
                 System.out.println("1- consultar saldo:");
-                System.out.println("2- comprar passagem:");
+                int acaoUsuario = lerInt();
+                interacaoPassageiro(acaoUsuario,passageiro);
 
             } else {
                 System.out.println("Você não está cadastrado, gostaria de se cadastrar?");
@@ -72,7 +75,7 @@ public class InterfacePassageiro implements Menu {
                     String nomeNovo = lerString();
                     System.out.println("sobrenome")
                     String sobrenomeNovo = lerString();
-                    passageiros.add(new Passageiro(nomeNovo, sobrenomeNovo,cpfnovo, 100));
+                    passageiros.add(new Passageiro(nomeNovo, sobrenomeNovo, cpfnovo, 100));
                     sytem.out.println("usuário adicionado");
                     login();
                 }

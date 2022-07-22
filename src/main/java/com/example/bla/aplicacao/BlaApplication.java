@@ -15,9 +15,6 @@ public class BlaApplication {
 		sistema.login();
 		if (sistema.lerInt() == 1) {
 			sistema.login();
-		} else {
-			System.err.println("Funcionalidade ainda não implementada");
 		}
-	}
 
 }
