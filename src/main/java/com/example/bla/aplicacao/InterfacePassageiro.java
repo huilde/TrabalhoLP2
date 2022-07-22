@@ -48,14 +48,16 @@ public class InterfacePassageiro implements Menu {
  * Caso contrário, ele pode se cadastrar no sistema
  */
     public void login() {
-        System.out.println("Você já possui cadastro no sistema?");
-        System.out.println("1- Sim");
-        System.out.println("2- Não");
-        int controle = lerInt();
         System.out.println("Digite seu CPF:");
         String cpfUsuário = lerString();
+        boolean controle = false;
         for (Passageiro passageiro : passageiros) {
-            if (cpfUsuário == passageiro.getCpf()) {
+            if (cpfUsuário == passageiro.getCpf()){
+                controle = true;
+                break;
+            }
+        }
+            if (controle) {
                 System.out.println("você está cadastrado no sistema");
                 System.out.println("Selecione uma opção:");
                 System.out.println("1- consultar saldo:");
@@ -80,7 +82,7 @@ public class InterfacePassageiro implements Menu {
                     login();
                 }
             }
-        }
+        
     }
 
 
