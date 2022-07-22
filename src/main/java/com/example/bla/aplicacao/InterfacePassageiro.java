@@ -35,8 +35,8 @@ public class InterfacePassageiro implements Menu {
  * Logar
  * Deve verificar se o usuário já possui cadastro
  * Solicitar o CPF
- * Caso o CPF esteja cadastrado no sistema, o usuário pode consultar o seu saldo e ou comprar passagem
- * Caso contrário, ele pode ser cadastrado no sistema
+ * Caso o CPF esteja cadastrado no sistema, o usuário pode consultar o seu saldo e/ou comprar passagem
+ * Caso contrário, ele pode se cadastrar no sistema
  */
     public void login() {
         System.out.println("Você já possui cadastro no sistema?");
