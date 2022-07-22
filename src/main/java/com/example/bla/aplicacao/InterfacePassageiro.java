@@ -62,7 +62,7 @@ public class InterfacePassageiro implements Menu {
                 System.out.println("Selecione uma opção:");
                 System.out.println("1- consultar saldo:");
                 int acaoUsuario = lerInt();
-                interacaoPassageiro(acaoUsuario,passageiro);
+                interacaoPassageiro(acaoUsuario, passageiros[0]);
 
             } else {
                 System.out.println("Você não está cadastrado, gostaria de se cadastrar?");
