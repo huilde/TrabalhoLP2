@@ -78,7 +78,7 @@ public class InterfacePassageiro implements Menu {
                 String sobrenomeNovo = lerString();
                 passageiros.add(new Passageiro(nomeNovo, sobrenomeNovo, cpfnovo, 100));
                 System.out.println("usuário adicionado");
-                login();
+                // login();
             }
         }
 

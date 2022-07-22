@@ -17,6 +17,5 @@ public class BlaApplication {
 		if (sistema.lerInt() == 1) {
 			sistema.login();
 		}
-
 	}
 }
