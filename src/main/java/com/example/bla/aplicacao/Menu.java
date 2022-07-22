@@ -2,6 +2,10 @@ package com.example.bla.aplicacao;
 
 import java.util.Scanner;
 
+/**
+ * Interface do MENU da aplicação
+ * Leitura do teclado
+ */
 public interface Menu {
 
     Scanner ler = new Scanner(System.in);

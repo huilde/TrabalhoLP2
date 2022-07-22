@@ -1,18 +1,35 @@
 package com.example.bla.aplicacao;
 
+/**
+ * Classe que herda da classe Passagem.
+ * Representa a versão manual da passsagem
+ * @param numeracao     numeração da passagem
+ * @param valor     dinheiro
+ * @param linha     linha de ônibus
+ */
+
 public class PassagemManual extends Passagem {
 
-    /** Numeração de identificação da passagem */
     private Long numeracao;
-
+    
+/**
+ * Construtor da Passagem Manual
+ */
     public PassagemManual(Linha linha, double valor) {
         super(linha, valor);
     }
-
+/**
+ * getter de numeração da passagem manual
+ * 
+ * @return numeração
+ */
     public Long getNumeracao() {
         return numeracao;
     }
-
+ /**
+ * setter de numeração da passagem manual
+ * modifica a numeração da passagem manual
+ */
     public void setNumeracao(Long numeracao) {
         this.numeracao = numeracao;
     }

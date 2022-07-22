@@ -5,15 +5,30 @@ import java.util.List;
 
 import com.example.bla.pessoa.Passageiro;
 
+/**
+ * Classe de MENU de interface do passageiro
+ * @param passagens     lista de passagens de ônibus
+ * @param passageiros       lista de passageiros do ônibus
+ */
+
 public class InterfacePassageiro implements Menu {
 
     private List<Passagem> passagens = new ArrayList<>();
     private List<Passageiro> passageiros = new ArrayList<>();
 
+<<<<<<< HEAD
     private void interacaoPassageiro(){
 
     }
 
+=======
+/**
+ * Iniciar a aplicação com as seguintes opções de usuário:
+ * 1 - passageiro
+ * 2 - cobrador 
+ * 3 - motorista
+ */
+>>>>>>> 21c9c2d97bdc0c1aceea2f16065f0f9dbbb92d15
     static int iniciar() {
         System.out.println("Bem-vindo ao sistema, por favor digite qual tipo de usuário você é:");
         System.out.println("1- Passageiro");
@@ -22,7 +37,14 @@ public class InterfacePassageiro implements Menu {
 
         return ler.nextInt();
     }
-
+    
+/**
+ * Logar
+ * Deve verificar se o usuário já possui cadastro
+ * Solicitar o CPF
+ * Caso o CPF esteja cadastrado no sistema, o usuário pode consultar o seu saldo e/ou comprar passagem
+ * Caso contrário, ele pode se cadastrar no sistema
+ */
     public void login() {
         System.out.println("Você já possui cadastro no sistema?");
         System.out.println("1- Sim");
